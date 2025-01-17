@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/tetris.png">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div class="canvas-container">
+            <span>HOLD</span>
+            <div class="canvas">
+                <canvas id="canvas-hold"></canvas>
+
+            </div>
+        </div>
+        <div class="canvas-container">
+            <span class="score-container">SCORE: <span id="score">0</span></span>
+            <div class="canvas">
+                <canvas id="canvas-tetris"></canvas>
+            </div>
+
+        </div>
+        <div class="canvas-container">
+            <span>NEXT</span>
+            <div class="canvas">
+
+                <canvas id="canvas-next"></canvas>
+            </div>
+
+        </div>
+
+        <div class="menu" id="menu">
+            <span class="menu-title">
+                <span>T</span>
+                <span>E</span>
+                <span>T</span>
+                <span>R</span>
+                <span>I</span>
+                <span>S</span>
+                <span>!</span>
+            </span>
+            <span id="gameover" class="gameover">Game Over</span>
+            <button id="btn-start">START</button>
+        </div>
+    </div>
+
+    <script src="/scripts/main.js" type="module"></script>
+</body>
+
+</html>

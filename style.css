@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+*{
+  font-family: "Silkscreen", serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background: linear-gradient(45deg,#1a1b28,#1a1a1a);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.canvas-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #3C3E52;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.canvas{
+    background-color: black;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.canvas-container span,
+.menu span{
+    color: white;
+    font-size: 25px;
+}
+
+
+.canvas-container .score-container,
+#score{
+    font-size: 20px;
+}
+
+.menu{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    border: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 30px;
+    align-items: center; /* Centra todo el contenido dentro del menú */
+}
+
+.menu-title {
+    font-size: 40px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Hace el texto más grueso */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    display: flex; /* Necesario para aplicar colores a las letras */
+    justify-content: center; /* Centra el contenido */
+    gap: 5px; /* Espacio entre las letras */
+    margin-bottom: 10px; /* Añade un margen inferior */
+}
+
+.menu-title span {
+    display: inline-block; /* Permite que cada letra tenga su propio estilo */
+    color: white; /* Color por defecto, si no se especifica otro */
+    font-size: inherit; /* Hereda el tamaño de la fuente del contenedor */
+}
+
+.menu-title span:nth-child(1) { color: red; }
+.menu-title span:nth-child(2) { color: orange; }
+.menu-title span:nth-child(3) { color: yellow; }
+.menu-title span:nth-child(4) { color: green; }
+.menu-title span:nth-child(5) { color: blue; }
+.menu-title span:nth-child(6) { color: purple; }
+.menu-title span:nth-child(7) { color: gold; }
+
+.menu button {
+    padding: 5px;
+    cursor: pointer;
+    color: black; /* Texto negro */
+    background-color: white; /* Fondo blanco */
+    border: 2px solid black; /* Bordes negros */
+    border-radius: 5px; /* Opcional: redondeo de bordes */
+    font-size: 16px; /* Opcional: tamaño del texto */
+    font-weight: bold; /* Opcional: texto en negrita */
+}
+
+.menu button:hover {
+    background-color: #f0f0f0; /* Opcional: efecto hover */
+}
+
+.gameover{
+    display: none;
+}
