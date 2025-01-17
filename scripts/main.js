@@ -14,7 +14,7 @@ const cols = 10;
 const cellsize = 26;
 const space = 2;
 
-const audio = new Audio('../sounds/tetris.ogg');
+const audio = new Audio('./sounds/tetris.ogg');
 audio.volume = 0.5;
 audio.loop = true;
 
